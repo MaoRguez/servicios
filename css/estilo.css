@@ -1,0 +1,62 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.cabezera{
+	background: rgba(230, 74, 25, 0.9);
+	height: 59px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+/*.domesticas{
+	padding-top: 80px;
+}*/
+.menu{
+	float: right;
+}
+.menu_bar{
+	float: right;
+}
+.menu ul{
+	list-style: none;
+	overflow: hidden; /* Limpiamos errores del float */
+}
+.menu ul li{
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+.menu ul li a{
+	display: block; /* convertimos los elementos a en elementos bloque*/
+	padding: 20px;
+	color: #fff;
+	text-decoration: none;
+}
+.menu ul li a span{
+	margin-left: 10px;
+	padding-right: 5px;
+}
+.menu ul li:hover{
+	background: #FFCCBC;
+}
+.logotipo{
+	float: left;
+}
+section#portada{
+	background-image: url(../imagenes/portada4.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba(255, 87, 34, 1);
+	height: 500px;
+	width: 100%;
+}
+.titulo{
+	float: left;
+}
+.titulo a{
+	color: #fff;
+	text-decoration: none;
+}
