@@ -17,7 +17,7 @@ $(document).ready(function(){
 			$("#logoimg").css({"margin-left": "30px","margin-top": "100px", "width": "250px", "height": "250px"});
 			$("header").css({"background-color": "transparent"});
 			$(".a").css({"color": "#607D8B"});
-			$("#titulo").css({"margin-top": "100px", "color": "#607D8B", "font-size": "60px"});
+			$("#titulo").css({"margin-top": "100px", "color": "#607D8B", "font-size": "3em"});
 			flag = false;
 			}
 		}
