@@ -1,12 +1,19 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
 }
 h1{
 	color: #607D8B;
-	font-family: 'Tangerine', serif;
-	font-size: 60px;
+	font-family: 'Acme', sans-serif;
+	font-size: 3em;
 	float: left;
 	margin-top: 100px;
 	text-shadow: 4px 4px 4px #aaa;
@@ -25,14 +32,14 @@ section#portada{
 }
 section#portada #eslogan h2{
 	color: #607D8B;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 24px;
 	float: left;
 	margin-left: 300px;
 	margin-top: 250px;
 	text-shadow: 4px 4px 4px #aaa;
 }
-section#contenedoramigo{
+section#contenedorhogar{
 	width: 100%;
 	height: 500px;
 }
@@ -67,13 +74,15 @@ ul a{
 ul li{
 	display: block;
 	float: left;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	/*margin: 10px;*/
 	padding: 20px 10px 0 10px;
 }
 ul li:hover{
-	background-color: #CFD8DC;
+	background-color: #455A64;
 	border-radius: 10px;
+	border-top: solid 4px #E91E63;
+	color: #FFF;
 	height: 50px;
 }
 figure#logo img{
