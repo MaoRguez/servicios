@@ -95,3 +95,17 @@ figure#logo img{
 	-moz-transition: width .5s, height .5s, margin-right .5s margin-top .5s;
 	transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
+#btn-registro{
+	float: right;
+	margin-top: 250px;
+	margin-right: 200px;
+}
+#btn-registro a{
+	background-color: #ff4842;
+	border-radius: 10px;
+	padding: .6em .8em;
+	text-decoration: none;
+}
+#btn-registro a:hover{
+	background-color: #D32F2F;
+}
