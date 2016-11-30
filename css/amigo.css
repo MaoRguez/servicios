@@ -28,6 +28,8 @@ section#portada{
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: block;
+	margin: auto;
 	height: 500px;
 }
 section#portada #eslogan h2{
@@ -101,11 +103,53 @@ figure#logo img{
 	margin-right: 200px;
 }
 #btn-registro a{
-	background-color: #ff4842;
+	background-color: #F44336;
 	border-radius: 10px;
 	padding: .6em .8em;
 	text-decoration: none;
 }
 #btn-registro a:hover{
+	background-color: #D32F2F;
+}
+div#imagenhogar{
+	width: 100%;
+	height: 200px;
+	margin: 0 auto;
+}
+.imagen_servicios{
+	float: left;
+	height: 200px;
+	width: 25%;
+}
+#cama, #baños, #cocina, #lavadora{
+	height: 65px;
+	margin-top: 50px;
+	margin-left: 136.125px;
+	width: 65%;
+}
+#cama_texto, #baños_texto, #cocina_texto, #lavadora_texto{
+	padding: 1em;
+	text-align: center;
+}
+#titulo_hogar{
+	width: 100%;
+}
+#titulo_hogar hgroup{
+	width: 520px;
+	text-align: center;
+	margin: 0 auto;
+}
+#servicio{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+#servicio a{
+	background-color: #F44336;
+	border-radius: 10px;
+	padding: .6em .8em;
+	text-decoration: none;
+}
+#servicio a:hover{
 	background-color: #D32F2F;
 }
