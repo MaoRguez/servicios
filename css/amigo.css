@@ -10,6 +10,7 @@ body{
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
+/*Titulo*/
 h1{
 	color: #607D8B;
 	font-family: 'Acme', sans-serif;
@@ -21,6 +22,7 @@ h1{
 	-moz-transition: width .5s, height .5s, margin-right .5s margin-top .5s;
 	transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
+/*Portada, eslogan, razon social*/
 section#portada{
 	width: 100%;
 	background-image: url(../imagenes/portada6.jpg);
@@ -41,10 +43,7 @@ section#portada #eslogan h2{
 	margin-top: 250px;
 	text-shadow: 4px 4px 4px #aaa;
 }
-section#contenedorhogar{
-	width: 100%;
-	height: 500px;
-}
+/*Cabezera, navegación, logo, botón registro*/
 header{
 	position: fixed;
 	width: 100%;
@@ -111,11 +110,30 @@ figure#logo img{
 #btn-registro a:hover{
 	background-color: #D32F2F;
 }
-div#imagenhogar{
+/*Subtitulos de los principales servicios*/
+.titulo hgroup{
+	color: #607D8B;
+	padding: 3em;
+	width: 520px;
+	text-align: center;
+	margin: 0 auto;
+}
+/*div Contenedor de las imagenes y servicios*/
+div .contenedor{
 	width: 100%;
 	height: 200px;
 	margin: 0 auto;
 	padding-bottom: 3em;
+}
+/*Subtitulo de las imagenes de los Servicios*/
+.imagen_subtitulo{
+	padding: 1em;
+	text-align: center;
+}
+/*Contenedor Hogar, servicios*/
+section#contenedorhogar{
+	width: 100%;
+	height: 500px;
 }
 .imagen_servicios{
 	float: left;
@@ -128,19 +146,7 @@ div#imagenhogar{
 	margin-left: 136.125px;
 	width: 65%;
 }
-#cama_texto, #baños_texto, #cocina_texto, #lavadora_texto{
-	padding: 1em;
-	text-align: center;
-}
-#titulo_hogar{
-	width: 100%;
-}
-#titulo_hogar hgroup{
-	padding: 3em;
-	width: 520px;
-	text-align: center;
-	margin: 0 auto;
-}
+/*Botón de pedir servicio*/
 #servicio{
 	display: block;
 	margin: 0 auto;
@@ -154,4 +160,20 @@ div#imagenhogar{
 }
 #servicio a:hover{
 	background-color: #D32F2F;
+}
+/*Contenedor belleza, Servicios*/
+section#contenedorbelleza{
+	width: 100%;
+	height: 500px;
+}
+.imagen_belleza{
+	float: left;
+	height: 200px;
+	width: 16%;
+}
+#pedicure, #manicure, #depilacion, #peluqueria, #barberia, #masaje{
+	height: 65px;
+	margin-top: 50px;
+	margin-left: 75.414px;
+	width: 65%;
 }
