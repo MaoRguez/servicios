@@ -115,6 +115,7 @@ div#imagenhogar{
 	width: 100%;
 	height: 200px;
 	margin: 0 auto;
+	padding-bottom: 3em;
 }
 .imagen_servicios{
 	float: left;
@@ -135,6 +136,7 @@ div#imagenhogar{
 	width: 100%;
 }
 #titulo_hogar hgroup{
+	padding: 3em;
 	width: 520px;
 	text-align: center;
 	margin: 0 auto;
@@ -147,7 +149,7 @@ div#imagenhogar{
 #servicio a{
 	background-color: #F44336;
 	border-radius: 10px;
-	padding: .6em .8em;
+	padding: 1em 3em;
 	text-decoration: none;
 }
 #servicio a:hover{
