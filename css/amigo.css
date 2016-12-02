@@ -159,7 +159,34 @@ figure#logo img{
 #servicio a:hover{
 	background-color: #D32F2F;
 }
-
+/*Contenedor niñera*/
+.imagen_ninera{
+	float: left;
+	/*height: 200px;*/
+	width: 33.333%;
+}
+#tiposervicios{
+	background-color: #4CAF50;
+	border-radius: 2em;
+	color: #fff;
+	margin-top: 100px;
+}
+#cuidadora{
+	padding-left: 84.328px;
+}
+#desarrollo{
+	padding-left: 84.328px;
+}
+#canguro, #cuadromsn{
+	float: left;
+}
+#canguro{
+	margin-top: 3em;
+	width: 25%;
+}
+#cuadromsn{
+	width: 75%;
+}
 /*Contenedor belleza, Servicios*/
 .imagen_belleza{
 	float: left;
