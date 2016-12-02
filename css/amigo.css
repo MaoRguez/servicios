@@ -172,6 +172,17 @@ figure#logo img{
 	margin-left: 79.9065px;
 	width: 65px;
 }
+/*Contenedor Opinión*/
+.redes_sociales{
+	float: left;
+	height: 346px;
+	width: 33%;
+	text-align: center;
+	color: #607D8B;
+}
+#g, #t{
+	border-left: 2px solid #8BC34A;
+}
 /*Contenedor del footer o pie de página*/
 footer{
 	background-color: rgba(97, 97, 97, 0.9);
