@@ -11,7 +11,7 @@ body{
 	font-smoothing: antialiased;
 }
 /*Titulo*/
-h1{
+#titulo{
 	color: #607D8B;
 	font-family: 'Acme', sans-serif;
 	font-size: 3em;
@@ -34,7 +34,7 @@ section#portada{
 	height: 500px;
 	width: 100%;
 }
-section#portada #eslogan h2{
+section#portada #eslogan #esloganh2{
 	color: #607D8B;
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 24px;
@@ -53,6 +53,9 @@ header{
 	-webkit-transition: background-color .5s;
 	-moz-transition: background-color .5s;
 	transition: background-color .5s;
+}
+.menu480{
+	display: none;
 }
 #menu{
 	display: block;
