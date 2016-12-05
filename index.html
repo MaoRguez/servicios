@@ -3,14 +3,20 @@
 <head>
 	<title>Ma'</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/amigo.css">
 	<link rel="stylesheet" type="text/css" href="fuentes/style.css">
+	<link rel="stylesheet" type="text/css" media="(max-width:480px)" href="css/max-480px.css">
 	<link href="https://fonts.googleapis.com/css?family=Acme|Lato|Open+Sans+Condensed:300|Ranga" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/amigo.js"></script>
 </head>
 <body>
 	<header>
+		<div class="menu480">
+			<div id="menuboton"><a class="bt-menu480" href="#"><span class="icon-menu"></span></a></div>
+			<div id="menutitulo"><h1>MA'</h1></div>
+		</div>
 		<nav id="menu">
 			<figure id="logo"> 
 				<img id="logoimg" src="imagenes/logopeqtransp.png">
@@ -28,7 +34,7 @@
 	</header>
 	<section id="portada" class="portada">
 		<div id="eslogan">
-			<h2>Porque cuando ya no cuentas con el hotel mamá<br>Podes contar con Ma'.</h2>
+			<h2 id="esloganh2">Porque cuando ya no cuentas con el hotel mamá<br>Podes contar con Ma'.</h2>
 		</div>
 		<div id="btn-registro">
 			<a>Solicita tú Ma'</a>
@@ -39,7 +45,7 @@
 			<h2>Hogar</h2>
 			<hgroup>
 				<h2>Que Servicios de hogar ofrece Ma'?</h2>
-				<h4>En Ma' son profesionales de la limpieza altamente capacitadas para solucionar todas las necesidades de tu hogar</h4>
+				<h4>En Ma' son profesionales de la limpieza altamente capacitados para solucionar todas las necesidades de tu hogar</h4>
 			</hgroup>
 		</article>
 			<article class="imagen_servicios">
@@ -78,7 +84,7 @@
 				<h4>Suministramos la niñera idonea para el correcto acompañamiento y desarrollo de sus hijos</h4>
 			</hgroup>
 		</article>
-		<article class="imagen_ninera">
+		<article id="ninera1" class="imagen_ninera">
 			<figure id="cuidadora">
 				<img src="imagenes/ninera.png">
 			</figure>
@@ -92,11 +98,11 @@
 				<hgroup>
 					<h2>Tipos de Servicios</h2>
 					<p>Ofrecemos servicios de niñeras permanentes, niñeras ocasionales, con un plus+ nuestras niñeras aportaran al desarrollo artistico, academico y deportivo de su hijo.</p>
-					<h4>"Personal altamente capacitado para su seguradad y la de sus hijos"</h4>
+					<h4>"Personal altamente capacitado para su seguridad y la de sus hijos"</h4>
 				</hgroup>
 			</article>
 		</article>
-		<article class="imagen_ninera">
+		<article id="ninera2" class="imagen_ninera">
 			<figure id="desarrollo">
 				<img src="imagenes/desarrollo.png">
 			</figure>
@@ -108,7 +114,7 @@
 			<h2>Belleza</h2>
 			<hgroup>
 				<h2>Que Servicios de belleza ofrece Ma'?</h2>
-				<h4>En Ma' son profesionales de estetica altamente capacitadas para solucionar todas tus necesidades</h4>
+				<h4>En Ma' son profesionales de estetica altamente capacitados para solucionar todas tus necesidades</h4>
 			</hgroup>
 		</article>
 			<article class="imagen_belleza">
