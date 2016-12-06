@@ -1,4 +1,4 @@
-@media screen and (max-width: 800px) and (min-width: 481px){
+@media screen and (max-width: 1150px) and (min-width: 801px){
 	body{
 		padding-top: 80px;
 	}
@@ -32,7 +32,7 @@
 		padding: 1em;
 	}
 	nav#menu{
-		width: 60%;
+		width: 40%;
 		height: calc(100% - 60px);
 		position: fixed;
 		left: -100%;
@@ -58,15 +58,8 @@
 	}
 
 	nav#menu #logo, nav#menu #titulo,
-	section#portada, section#contenedorninera article#ninera1,
-	#servicio, .contenedor .titulo .subtitulocontenedor,
-	section#contenedorninera article#tiposervicios figure#canguro,
-	section#contenedoropinion, footer{
+	section#portada, section#contenedoropinion{
 		display: none;
-	}
-	.contenedor{
-		height: 350px;
-		width: 100%;
 	}
 	.contenedor .titulo h2{
 		display: block;
@@ -79,48 +72,41 @@
 		text-align: center;
 		margin: 0 auto;
 	}
-	.contenedor .imagen_servicios, .contenedor .imagen_belleza, 
-	.contenedor .imagen_ninera{
+	.contenedor{
 		display: block;
 		height: auto;
-		width: 50%;
+		width: 100%;
+	}
+	.imagen_servicios{
+		float: left;
+		width: 25%;
 	}
 	#cama, #baños, #cocina, #lavadora{
 		margin: 1em auto;
 	}
-	.imagen_subtitulo{
-		color: #009688;
-		font-family: 'Acme', sans-serif;
-		font-size: 1em;
-		padding: .5em;
-		text-rendering: optimizeLegibility;
+	.imagen_ninera{
+		float: left;
+		width: 33%;
 	}
 	#tiposervicios{
-		background-color: #fff;
-		border-radius: 0;
-		margin-top: 0;
-		color: #607D8B;
-		width: 50%;
+		margin-top: 80px;
+	}
+	#cuidadora, #desarrollo{
+		padding: 0;
+		width: 100%;
+	}
+	#cuidadora img{
+		margin-left: 62.344px;
+	}
+	#desarrollo img{
+		margin-left: 22.844px;
+	}
+	#canguro{
+		margin-top: 4em;
+		width: 25%;
 	}
 	#cuadromsn{
-		margin-left: 5%;
-		margin-top: 30%;
-		text-align: justify;
-		width: 100%;
-		display: block;
-	}
-	#ninera2{
-		display: block;
-		float: right;
-		margin-top: 1%;
-		width: 50%;
-	}
-	#desarrollo{
-		padding-left: 0;
-		margin-left:  calc((100% - 281px)/2);
-	}
-	#pedicure, #manicure, #depilacion, #peluqueria, 
-	#barberia, #masaje{
-		margin: 1em auto;
+		margin-left: 2em;
+		width: 60%;
 	}
 }
