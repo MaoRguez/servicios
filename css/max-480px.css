@@ -2,9 +2,6 @@
 	body{
 		padding-top: 80px;
 	}
-	header{
-		top: 0;
-	}
 	.menu480{
 		background: #E6344a;
 		display: block;
@@ -13,12 +10,12 @@
 		top: 0;
 	}
 	.menu480 .bt-menu480{
-		display: block;
-		padding: .5em;
 		color: #fff;
-		overflow: hidden;
+		display: block;
 		font-size: 1.5em;
 		font-weight: bold;
+		overflow: hidden;
+		padding: .5em;
 		text-decoration: none;
 	}
 	.menu480 .bt-menu480 span{
@@ -34,8 +31,35 @@
 		float: left;
 		padding: 1em;
 	}
+	nav#menu{
+		width: 80%;
+		height: calc(100% - 60px);
+		position: fixed;
+		left: -100%;
+		margin: 0;
+		margin-top: -6px;
+		overflow: scroll;
+	}
+	nav#menu ul#menu_navegacion{
+		width: 100%;
+	}
+	nav#menu ul#menu_navegacion #oculto img{
+		width: 100%;
+	}
+	nav#menu ul#menu_navegacion .item{
+		display: block;
+		/*border-bottom: 1px solid rgba(255, 255, 255, .5);*/
+	}
+	nav#menu ul#menu_navegacion .item:hover{
+		background: #E6344A;
+	}
+	nav#menu ul#menu_navegacion .item .a{
+		display: block;
+	}
+
+	nav#menu #logo, nav#menu #titulo,
 	section#portada, section#contenedorninera article#ninera1,
-	#servicio, nav#menu, .contenedor .titulo .subtitulocontenedor,
+	#servicio, .contenedor .titulo .subtitulocontenedor,
 	section#contenedorninera article#tiposervicios figure#canguro,
 	section#contenedoropinion, footer{
 		display: none;
