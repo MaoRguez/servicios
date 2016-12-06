@@ -2,6 +2,9 @@
 	body{
 		padding-top: 80px;
 	}
+	header{
+		top: 0;
+	}
 	.menu480{
 		background: #E6344a;
 		display: block;
