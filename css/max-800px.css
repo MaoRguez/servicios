@@ -1,0 +1,126 @@
+@media screen and (max-width: 800px) and (min-width: 481px){
+	body{
+		padding-top: 80px;
+	}
+	.menu480{
+		background: #E6344a;
+		display: block;
+		position: fixed;
+		width: 100%;
+		top: 0;
+	}
+	.menu480 .bt-menu480{
+		color: #fff;
+		display: block;
+		font-size: 1.5em;
+		font-weight: bold;
+		overflow: hidden;
+		padding: .5em;
+		text-decoration: none;
+	}
+	.menu480 .bt-menu480 span{
+		font-size: 2em;
+	}
+	.menu480 #menuboton{
+		display: block;
+		float: left;
+	}
+	.menu480 #menutitulo{
+		color: #fff;
+		display: block;
+		float: left;
+		padding: 1em;
+	}
+	nav#menu{
+		width: 80%;
+		height: calc(100% - 60px);
+		position: fixed;
+		left: -100%;
+		margin: 0;
+		margin-top: -6px;
+		overflow: scroll;
+	}
+	nav#menu ul#menu_navegacion{
+		width: 100%;
+	}
+	nav#menu ul#menu_navegacion #oculto img{
+		width: 100%;
+	}
+	nav#menu ul#menu_navegacion .item{
+		display: block;
+		/*border-bottom: 1px solid rgba(255, 255, 255, .5);*/
+	}
+	nav#menu ul#menu_navegacion .item:hover{
+		background: #E6344A;
+	}
+	nav#menu ul#menu_navegacion .item .a{
+		display: block;
+	}
+
+	nav#menu #logo, nav#menu #titulo,
+	section#portada, section#contenedorninera article#ninera1,
+	#servicio, .contenedor .titulo .subtitulocontenedor,
+	section#contenedorninera article#tiposervicios figure#canguro,
+	section#contenedoropinion, footer{
+		display: none;
+	}
+	.contenedor{
+		height: 350px;
+		width: 100%;
+	}
+	.contenedor .titulo h2{
+		display: block;
+		width: 100%;
+	}
+	.titulo hgroup{
+		color: #607D8B;
+		padding: 0;
+		width: 100%;
+		text-align: center;
+		margin: 0 auto;
+	}
+	.contenedor .imagen_servicios, .contenedor .imagen_belleza, 
+	.contenedor .imagen_ninera{
+		display: block;
+		height: auto;
+		width: 50%;
+	}
+	#cama, #baños, #cocina, #lavadora{
+		margin: 1em auto;
+	}
+	.imagen_subtitulo{
+		color: #009688;
+		font-family: 'Acme', sans-serif;
+		font-size: 1em;
+		padding: .5em;
+		text-rendering: optimizeLegibility;
+	}
+	#tiposervicios{
+		background-color: #fff;
+		border-radius: 0;
+		margin-top: 0;
+		color: #607D8B;
+		width: 50%;
+	}
+	#cuadromsn{
+		margin-left: 5%;
+		margin-top: 30%;
+		text-align: justify;
+		width: 100%;
+		display: block;
+	}
+	#ninera2{
+		display: block;
+		float: right;
+		margin-top: 1%;
+		width: 50%;
+	}
+	#desarrollo{
+		padding-left: 0;
+		margin-left:  calc((100% - 281px)/2);
+	}
+	#pedicure, #manicure, #depilacion, #peluqueria, 
+	#barberia, #masaje{
+		margin: 1em auto;
+	}
+}
