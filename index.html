@@ -1,44 +1,216 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Amig@</title>
+	<title>Ma'</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/fuentes.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1 user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="css/amigo.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Tangerine" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="fuentes/style.css">
+	<link rel="stylesheet" type="text/css" media="(max-width:480px)" href="css/max-480px.css">
+	<link rel="stylesheet" type="text/css" media="(max-width:800px)" href="css/max-800px.css">
+	<link rel="stylesheet" type="text/css" media="(orientation: landscape)" href="css/landscape.css">
+	<link rel="stylesheet" type="text/css" media="(max-width:1150px)" href="css/max-1150px.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Lato|Open+Sans+Condensed:300|Ranga" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/amigo.js"></script>
 </head>
 <body>
 	<header>
-		<nav>
+		<div class="menu480">
+			<div id="menuboton"><a class="bt-menu480" href="#"><span class="icon-menu"></span></a></div>
+			<div id="menutitulo"><h1>MA'</h1></div>
+			<button class="button"><span>Solicita tu MA'</span></button>
+		</div>
+		<nav id="menu">
 			<figure id="logo"> 
 				<img id="logoimg" src="imagenes/logopeqtransp.png">
 			</figure>
 			<h1 id="titulo">MA'</h1>
-			<ul>
-				<a class="a" href="#"><li>Home</li></a>
-				<a class="a" href="#"><li>Niñera</li></a>
-				<a class="a" href="#"><li>Belleza</li></a>
-				<a class="a" href="#"><li>Precios</li></a>
-				<a class="a" href="#"><li>Unete</li></a>
-				<a class="a" href="#"><li>Inicio Sesión</li></a>
+			<ul id="menu_navegacion">
+				<li id="oculto" class="item"><img src="imagenes/portada200.png" srcset="imagenes/portada400.png, imagenes/portada400.png 2x, imagenes/portada800.png, imagenes/portada6.png, imagenes/portadaSG.png"></li>
+				<li class="item"><a class="a" href="#">Como funciona?</a></li>
+				<li class="item"><a class="a" href="#">Seguridad y confianza</a></li>
+				<li class="item"><a class="a" href="#">Preguntas más usadas</a></li>
+				<li class="item"><a class="a" href="#">Precios</a></li>
+				<li class="item"><a class="a" href="#">Trabaja con Ma'</a></li>
+				<li class="item"><a class="a" href="#">Inicio Sesión</a></li>
 			</ul>
 		</nav>
 	</header>
 	<section id="portada" class="portada">
 		<div id="eslogan">
-			<h2>"Porque cuando ya no cuentas con el hotel mamá" <br>Podes contar con Ma'.</h2>
+			<h2 id="esloganh2">Porque cuando ya no cuentas con el hotel mamá<br>Podes contar con Ma'.</h2>
+		</div>
+		<div id="btn-registro">
+			<a>Solicita tú Ma'</a>
 		</div>
 	</section>
-	<section id="contenedoramigo" class="contenedoramigo">
-		
+	<section id="contenedorhogar" class="contenedor">
+		<article class="titulo">
+			<h2 class="subtitulocontenedor" >Hogar</h2>
+			<hgroup>
+				<h2>Que Servicios de hogar ofrece Ma'?</h2>
+				<h4>En Ma' son profesionales de la limpieza altamente capacitados para solucionar todas las necesidades de tu hogar</h4>
+			</hgroup>
+		</article>
+			<article class="imagen_servicios">
+				<figure id="cama">
+					<img src="imagenes/cama.svg">
+				</figure>
+				<figcaption class="imagen_subtitulo">habitaciones y areas comunes</figcaption>
+			</article>
+			<article class="imagen_servicios">
+				<figure id="baños">
+					<img src="imagenes/baño.svg">
+				</figure>
+				<figcaption class="imagen_subtitulo">Baños</figcaption>
+			</article>
+			<article class="imagen_servicios">
+				<figure id="cocina">
+					<img src="imagenes/cocina.svg">
+				</figure>
+				<figcaption class="imagen_subtitulo">Cocina</figcaption>
+			</article>
+			<article class="imagen_servicios">
+				<figure id="lavadora">
+					<img src="imagenes/lavadora.svg">
+				</figure>
+				<figcaption class="imagen_subtitulo">lavado y planchado</figcaption>
+			</article>
+		<div id="servicio">
+			<a>Solicita tú Ma'</a>
+		</div>
 	</section>
-	<section id="contenedorninera" class="contenedorninera">
-		
+	<section id="contenedorninera" class="contenedor">
+		<article class="titulo">
+			<h2 class="subtitulocontenedor" >Niñera</h2>
+			<hgroup>
+				<h2>Que Servicios de Niñera ofrece Ma'?</h2>
+				<h4>Suministramos la niñera idonea para el correcto acompañamiento y desarrollo de sus hijos</h4>
+			</hgroup>
+		</article>
+		<article id="ninera1" class="imagen_ninera">
+			<figure id="cuidadora">
+				<img src="imagenes/ninera.png">
+			</figure>
+			<figcaption class="imagen_subtitulo">Niñera</figcaption>
+		</article>
+		<article id="tiposervicios" class="imagen_ninera">
+			<figure id="canguro">
+				<img src="imagenes/canguro.png">
+			</figure>
+			<article id="cuadromsn">
+				<hgroup>
+					<h2>Tipos de Servicios</h2>
+					<p>Ofrecemos servicios de niñeras permanentes, niñeras ocasionales, con un plus+ nuestras niñeras aportaran al desarrollo artistico, academico y deportivo de su hijo.</p>
+					<h4>"Personal altamente capacitado para su seguridad y la de sus hijos"</h4>
+				</hgroup>
+			</article>
+		</article>
+		<article id="ninera2" class="imagen_ninera">
+			<figure id="desarrollo">
+				<img src="imagenes/desarrollo.png">
+			</figure>
+			<figcaption class="imagen_subtitulo">Desarrollo Integral</figcaption>
+		</article>
 	</section>
-	<section id="contenedorbelleza" class="contenedorbelleza">
-		
+	<section id="contenedorbelleza" class="contenedor">
+		<article class="titulo">
+			<h2 class="subtitulocontenedor" >Belleza</h2>
+			<hgroup>
+				<h2>Que Servicios de belleza ofrece Ma'?</h2>
+				<h4>En Ma' son profesionales de estetica altamente capacitados para solucionar todas tus necesidades</h4>
+			</hgroup>
+		</article>
+			<article class="imagen_belleza">
+				<figure id="pedicure">
+					<img src="imagenes/pedicure1.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Pedicure</figcaption>
+			</article>
+			<article class="imagen_belleza">
+				<figure id="manicure">
+					<img src="imagenes/manicure.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Manicure</figcaption>
+			</article>
+			<article class="imagen_belleza">
+				<figure id="depilacion">
+					<img src="imagenes/depilacion.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Depilación</figcaption>
+			</article>
+			<article class="imagen_belleza">
+				<figure id="peluqueria">
+					<img src="imagenes/cepillado.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Peluqueria</figcaption>
+			</article>
+			<article class="imagen_belleza">
+				<figure id="barberia">
+					<img src="imagenes/barberia.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Barberia</figcaption>
+			</article>
+			<article class="imagen_belleza">
+				<figure id="masaje">
+					<img src="imagenes/masaje.png">
+				</figure>
+				<figcaption class="imagen_subtitulo">Masaje</figcaption>
+			</article>
+		<div id="servicio">
+			<a>Solicita tú Ma'</a>
+		</div>
 	</section>
+	<section id="contenedoropinion" class="contenedor">
+		<article class="titulo">
+			<h2>Opinión</h2>
+			<hgroup>
+				<h2>Lo que nuestros clientes piensan de Ma'</h2>
+			</hgroup>
+		</article>
+		<article id="f" class="redes_sociales">
+			<h2><span class="icon-facebook2"></span>Facebook</h2>
+		</article>
+		<article id="g" class="redes_sociales">
+			<h2><span class="icon-google-plus2"></span>Google +</h2>
+		</article>
+		<article id="t" class="redes_sociales">
+			<h2><span class="icon-twitter"></span>Twiter</h2>
+		</article>
+	</section>
+	<footer>
+		<section id="contenedor_footer">
+			<article id="membrete">
+				<ul class="menu_footer">
+					<h2>Ma'</h2>
+					<li>Necesitas ayuda?, Escribenos:</li>
+					<a class="afooter" href="#"><li>info@ma.com</li></a>
+					<li>Deja tu mensaje en redes sociales.</li>
+				</ul>
+			</article>
+			<article id="aside">
+				<ul class="menu_footer">
+					<h4>Ma'</h4>
+					<a class="afooter" href="#"><li>Contactanos</li></a>
+					<a class="afooter" href="#"><li>Política y Privacidad</li></a>
+					<a class="afooter" href="#"><li>Terminos y Condiciones</li></a>
+				</ul>
+			</article>
+			<article id="social">
+				<ul class="menu_footer">
+					<h4>Redes Sociales</h4>
+					<a class="afooter" href="#"><li><span class="icon-facebook2"></span> Facebook</li></a>
+					<a class="afooter" href="#"><li><span class="icon-google-plus2"></span> Google+</li></a>
+					<a class="afooter" href="#"><li><span class="icon-twitter"></span> Twiter</li></a>
+				</ul>
+			</article>
+		</section>
+		<section id="derechos">
+			<article id="copy">
+				<small>&copy 2016 Maorguez</small>
+			</article>
+		</section>
+	</footer>
 </body>
 </html>
