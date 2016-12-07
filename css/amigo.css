@@ -1,12 +1,20 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Open Sans', sans-serif;
 }
-h1{
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+}
+/*Titulo*/
+#titulo{
 	color: #607D8B;
-	font-family: 'Tangerine', serif;
-	font-size: 60px;
+	font-family: 'Acme', sans-serif;
+	font-size: 3em;
 	float: left;
 	margin-top: 100px;
 	text-shadow: 4px 4px 4px #aaa;
@@ -14,67 +22,104 @@ h1{
 	-moz-transition: width .5s, height .5s, margin-right .5s margin-top .5s;
 	transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
 }
+/*Portada, eslogan, razon social*/
 section#portada{
-	width: 100%;
 	background-image: url(../imagenes/portada6.jpg);
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	display: block;
+	margin: auto;
 	height: 500px;
+	width: 100%;
 }
-section#portada #eslogan h2{
+section#portada #eslogan #esloganh2{
 	color: #607D8B;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 24px;
 	float: left;
 	margin-left: 300px;
 	margin-top: 250px;
 	text-shadow: 4px 4px 4px #aaa;
 }
-section#contenedoramigo{
-	width: 100%;
-	height: 500px;
-}
+/*Cabezera, navegación, logo, botón registro*/
 header{
+	width: 100%;
+}
+.menu480{
+	display: none;
+}
+/*Button para header media screen*/
+.menu480 .button{
+		background-color: #4CAF50; /*VERDE*/
+		border: none;
+		border-radius: 8px;
+		color: #fff;
+		cursor: pointer;
+		display: block;
+		float: right;
+		font-size: 1.5em;
+		padding: .5em 1em;
+		margin: 12px 4px;
+		text-align: center;
+		text-decoration: none;
+		transition: all 0.5s;
+	}
+	.button span{
+		cursor: pointer;
+		display: block;
+		position: relative;
+		transition: 0.5s;
+	}
+	.button span:after{
+		content: "»";
+		position: absolute;
+		opacity: 0;
+		top: 0;
+		right: -20px;
+		transition: 0.5s;
+	}
+	.button:hover{
+		background-color: #3e8e41;
+	}
+	.button:hover span{
+		padding-right: 25px;
+	}
+	.button:hover span:after{
+		opacity: 1;
+		right: 0;
+	}
+
+nav#menu{
+	background: rgba(2, 56, 89, .9);
+	height: 60px;
+	margin: 0 auto;
 	position: fixed;
 	width: 100%;
-	height: 70px;
-	/*background: rgba(230, 74, 25, 0.9);*/ 
-	background-color: transparent;
-	-webkit-transition: background-color .5s;
-	-moz-transition: background-color .5s;
-	transition: background-color .5s;
+	z-index: 1000;
+	max-width: 2000px;
 }
-nav{
-	display: block;
-	margin: auto;
-	/*margin-top: 15px;*/
-	height: 70px;
-	-webkit-transition: margin-left .5s;
-	-moz-transition: margin-left .5s;
-	transition: margin-left .5s;
-}
-ul{
-	display: block;
-	float: right;
+#menu_navegacion{
 	list-style: none;
+	float: right;
 }
-ul a{
-	color: #607D8B;
-	text-decoration: none;
+#menu_navegacion .item{
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	position: relative;
 }
-ul li{
+#menu_navegacion #oculto{
+	display: none;
+}
+#menu_navegacion .item:hover{
+	border-top: solid 4px #E6344A;
+}
+#menu_navegacion .item .a{
+	color: #fff;
 	display: block;
-	float: left;
-	font-family: 'Open Sans', sans-serif;
-	/*margin: 10px;*/
-	padding: 20px 10px 0 10px;
-}
-ul li:hover{
-	background-color: #CFD8DC;
-	border-radius: 10px;
-	height: 50px;
+	padding: 1.1em;
+	text-decoration: none;
 }
 figure#logo img{
 	float: left;
@@ -85,4 +130,153 @@ figure#logo img{
 	-webkit-transition: width .5s, height .5s, margin-right .5s margin-top .5s;
 	-moz-transition: width .5s, height .5s, margin-right .5s margin-top .5s;
 	transition: width .5s, height .5s, margin-right .5s, margin-top .5s;
+}
+#btn-registro{
+	float: right;
+	margin-top: 250px;
+	margin-right: 200px;
+}
+#btn-registro a{
+	background-color: #F44336;
+	border-radius: 10px;
+	padding: .6em .8em;
+	text-decoration: none;
+}
+#btn-registro a:hover{
+	background-color: #D32F2F;
+}
+/*Subtitulos de los principales servicios*/
+.titulo hgroup{
+	color: #607D8B;
+	padding: 3em;
+	width: 520px;
+	text-align: center;
+	margin: 0 auto;
+}
+/*Contenedor de las imagenes y servicios*/
+.contenedor{
+	width: 100%;
+	height: 500px;
+	padding-bottom: 3em;
+	margin: 0 auto;
+}
+/*Subtitulo de las imagenes de los Servicios*/
+.imagen_subtitulo{
+	padding: 1em;
+	text-align: center;
+}
+/*Contenedor Hogar, servicios*/
+.imagen_servicios{
+	float: left;
+	height: 200px;
+	width: 25%;
+}
+#cama, #baños, #cocina, #lavadora{
+	height: 65px;
+	margin-top: 50px;
+	margin-left: 136.125px;
+	width: 65px;
+}
+/*Botón de pedir servicio*/
+#servicio{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+}
+#servicio a{
+	background-color: #F44336;
+	border-radius: 10px;
+	padding: 1em 3em;
+	text-decoration: none;
+}
+#servicio a:hover{
+	background-color: #D32F2F;
+}
+/*Contenedor niñera*/
+.imagen_ninera{
+	float: left;
+	/*height: 200px;*/
+	width: 33%;
+}
+#tiposervicios{
+	background-color: #4CAF50;
+	border-radius: 2em;
+	color: #fff;
+	margin-top: 100px;
+}
+#cuidadora{
+	padding-left: 84.328px;
+}
+#desarrollo{
+	padding-left: 84.328px;
+}
+#canguro, #cuadromsn{
+	float: left;
+}
+#canguro{
+	margin-top: 3em;
+	width: 25%;
+}
+#cuadromsn{
+	width: 75%;
+}
+/*Contenedor belleza, Servicios*/
+.imagen_belleza{
+	float: left;
+	height: 200px;
+	width: 16.666%;
+}
+#pedicure, #manicure, #depilacion, #peluqueria, #barberia, #masaje{
+	height: 65px;
+	margin-top: 50px;
+	margin-left: 79.9065px;
+	width: 65px;
+}
+/*Contenedor Opinión*/
+.redes_sociales{
+	float: left;
+	height: 346px;
+	width: 33%;
+	text-align: center;
+	color: #607D8B;
+}
+#g, #t{
+	border-left: 2px solid #8BC34A;
+}
+/*Contenedor del footer o pie de página*/
+footer{
+	background-color: rgba(97, 97, 97, 0.9);
+	color: #fff;
+	width: 100%;
+	height: 200px;
+}
+#contenedor_footer{
+	height: 150px;
+	width: 900px;
+	margin: 0 auto;
+}
+#aside, #social, #membrete{
+	float: left;
+	height: 130px;
+	width: 33.333%;
+	color: #fff;
+	padding-top: 1em;
+}
+.menu_footer{
+	list-style: none;
+	margin-left: 5em;
+}
+.menu_footer .afooter{
+	color: #fff;
+	text-decoration: none;
+}
+#derechos{
+	border-top: 2px solid #fff;
+	width: 900px;
+	margin: 1em auto 0;
+}
+#copy{
+	width: 100%;
+	text-align: right;
 }
