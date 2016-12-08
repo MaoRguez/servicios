@@ -50,46 +50,59 @@ header{
 .menu480{
 	display: none;
 }
-/*Button para header media screen*/
-.menu480 .button{
-		background-color: #4CAF50; /*VERDE*/
-		border: none;
-		border-radius: 8px;
-		color: #fff;
-		cursor: pointer;
+/*Botón de footer en el menu*/
+.menu480 .menupie{
 		display: block;
 		float: right;
-		font-size: 1em;
-		padding: .5em .5em;
-		margin: 18px 4px;
-		text-align: center;
-		text-decoration: none;
-		transition: all 0.5s;
+		margin-top: 1.5em;
+		margin-right: .3em;
 	}
-	.button span{
+	.menu480 .menupie span{
 		cursor: pointer;
-		display: block;
-		position: relative;
-		transition: 0.5s;
+		color: #fff;
+		font-size: 1em;
 	}
-	.button span:after{
-		content: "»";
-		position: absolute;
-		opacity: 0;
-		top: 0;
-		right: -20px;
-		transition: 0.5s;
-	}
-	.button:hover{
-		background-color: #3e8e41;
-	}
-	.button:hover span{
-		padding-right: 25px;
-	}
-	.button:hover span:after{
-		opacity: 1;
-		right: 0;
-	}
+/*Button para header media screen*/
+.menu480 .button{
+	background-color: #4CAF50; /*VERDE*/
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	float: left;
+	font-size: 1em;
+	padding: .5em .5em;
+	margin-top: 1em;
+	margin-left: 4em;
+	text-align: center;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+.button span{
+	cursor: pointer;
+	display: block;
+	position: relative;
+	transition: 0.5s;
+}
+.button span:after{
+	content: "»";
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+}
+.button:hover{
+	background-color: #3e8e41;
+}
+.button:hover span{
+	padding-right: 25px;
+}
+.button:hover span:after{
+	opacity: 1;
+	right: 0;
+}
 nav#menu{
 	background: rgba(2, 56, 89, .9);
 	height: 60px;

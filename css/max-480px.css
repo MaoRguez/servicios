@@ -3,47 +3,57 @@
 		padding-top: 80px;
 	}
 	/*header en media screen*/
-.menu480{
+	.menu480{
 		background: #E6344a;
 		display: block;
 		position: fixed;
 		width: 100%;
 		top: 0;
 	}
-	.menu480 .bt-menu480{
-		color: #fff;
-		display: block;
-		font-size: 1.5em;
-		font-weight: bold;
-		overflow: hidden;
-		padding: .5em;
-		text-decoration: none;
-	}
-	.menu480 .bt-menu480 span{
-		font-size: 2em;
-	}
 	.menu480 #menuboton{
 		display: block;
 		float: left;
+		margin-top: 1.5em;
+	}
+	.menu480 .bt-menu480{
+		text-decoration: none;
+	}
+	.menu480 .bt-menu480 span{
+		color: #fff;
+		font-size: 1em;
+		padding-left: .5em;
 	}
 	.menu480 #menutitulo{
 		color: #fff;
 		display: block;
 		float: left;
-		padding: 1em;
+		padding: .5em;
+		margin-top: .4em;
+	}
+	.menu480 .menupie{
+		display: block;
+		float: right;
+		margin-top: 1.5em;
+		margin-right: .3em;
+	}
+	.menu480 .menupie span{
+		cursor: pointer;
+		color: #fff;
+		font-size: 1em;
 	}
 	/*Button para header media screen*/
-.menu480 .button{
+	.menu480 .button{
 		background-color: #4CAF50; /*VERDE*/
 		border: none;
 		border-radius: 8px;
 		color: #fff;
 		cursor: pointer;
 		display: block;
-		float: right;
+		float: left;
 		font-size: 1em;
 		padding: .5em .5em;
-		margin: 18px 4px;
+		margin-top: 1em;
+		margin-left: 4em;
 		text-align: center;
 		text-decoration: none;
 		transition: all 0.5s;
