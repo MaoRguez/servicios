@@ -30,17 +30,6 @@
 		padding: .5em;
 		margin-top: .4em;
 	}
-	.menu480 .menupie{
-		display: block;
-		float: right;
-		margin-top: 1.5em;
-		margin-right: .3em;
-	}
-	.menu480 .menupie span{
-		cursor: pointer;
-		color: #fff;
-		font-size: 1em;
-	}
 	/*Button para header media screen*/
 	.menu480 .button{
 		background-color: #4CAF50; /*VERDE*/
@@ -49,11 +38,11 @@
 		color: #fff;
 		cursor: pointer;
 		display: block;
-		float: left;
+		float: right;
 		font-size: 1em;
 		padding: .5em .5em;
 		margin-top: 1em;
-		margin-left: 4em;
+		margin-right: 1em;
 		text-align: center;
 		text-decoration: none;
 		transition: all 0.5s;
@@ -88,7 +77,7 @@
 		position: fixed;
 		left: -100%;
 		margin: 0;
-		margin-top: -6px;
+		margin-top: -19px;
 		overflow: scroll;
 	}
 	nav#menu ul#menu_navegacion{
@@ -107,13 +96,15 @@
 	nav#menu ul#menu_navegacion .item .a{
 		display: block;
 	}
-
 	nav#menu #logo, nav#menu #titulo,
 	section#portada, section#contenedorninera article#ninera1,
 	#servicio, .contenedor .titulo .subtitulocontenedor,
 	section#contenedorninera article#tiposervicios figure#canguro,
-	section#contenedoropinion, footer{
+	section#contenedoropinion{
 		display: none;
+	}
+	.contenedor{
+		clear: both;
 	}
 	.contenedor .titulo h2{
 		display: block;
@@ -126,8 +117,7 @@
 		text-align: center;
 		margin: 0 auto;
 	}
-	.contenedor .imagen_servicios, .contenedor .imagen_belleza, 
-	.contenedor .imagen_ninera{
+	.contenedor .imagen_servicios, .contenedor .imagen_belleza{
 		display: block;
 		height: auto;
 		width: 100%;
@@ -143,11 +133,12 @@
 		text-rendering: optimizeLegibility;
 	}
 	#tiposervicios{
-		background-color: #fff;
+		background-color: transparent;
 		border-radius: 0;
 		margin-top: 0;
 		color: #607D8B;
 		width: 100%;
+		padding: 0;
 	}
 	#cuadromsn{
 		display: block;
@@ -156,12 +147,43 @@
 		text-align: justify;
 		width: 90%;
 	}
-	#desarrollo{
-		padding-left: 0;
-		margin-left:  calc((100% - 281px)/2);
+	#ninera2{
+		width: 100%;
+	}
+	#desarrollo img{
+		display: block;
+		margin: auto;
 	}
 	#pedicure, #manicure, #depilacion, #peluqueria, 
 	#barberia, #masaje{
 		margin: 1em auto;
+	}
+	footer{
+		clear: both;
+		height: 200px;
+	}
+	#contenedor_footer{
+		clear: both;
+	}
+	#membrete{
+		display: none;
+	}
+	#aside, #social, #derechos{
+		display: block;
+		width: 100%;
+		padding-top: 0;
+	}
+	#aside, #social{
+		border-bottom: 2px solid #f5f5f5;
+	}
+	#derechos figure{
+		width: 46%;
+	}
+	#derechos figure img{
+		float: right;
+		margin-right: .3em;	
+	}
+	#derechos div{
+		width: 54%;
 	}
 }

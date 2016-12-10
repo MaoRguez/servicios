@@ -6,9 +6,6 @@ body{
 	font-family: 'Lato', sans-serif;
 	font-size: 16px;
 	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-	-moz-font-smoothing: antialiased;
-	font-smoothing: antialiased;
 }
 /*Titulo*/
 #titulo{
@@ -50,18 +47,6 @@ header{
 .menu480{
 	display: none;
 }
-/*Botón de footer en el menu*/
-.menu480 .menupie{
-		display: block;
-		float: right;
-		margin-top: 1.5em;
-		margin-right: .3em;
-	}
-	.menu480 .menupie span{
-		cursor: pointer;
-		color: #fff;
-		font-size: 1em;
-	}
 /*Button para header media screen*/
 .menu480 .button{
 	background-color: #4CAF50; /*VERDE*/
@@ -70,11 +55,11 @@ header{
 	color: #fff;
 	cursor: pointer;
 	display: block;
-	float: left;
+	float: right;
 	font-size: 1em;
 	padding: .5em .5em;
 	margin-top: 1em;
-	margin-left: 4em;
+	margin-right: 1em;
 	text-align: center;
 	text-decoration: none;
 	transition: all 0.5s;
@@ -172,9 +157,12 @@ figure#logo img{
 	padding-bottom: 3em;
 	margin: 0 auto;
 }
+#contenedorninera, #contenedoropinion{
+	background: #f5f5f5;
+}
 /*Subtitulo de las imagenes de los Servicios*/
 .imagen_subtitulo{
-	padding: 1em;
+	padding: .5em;
 	text-align: center;
 }
 /*Contenedor Hogar, servicios*/
@@ -206,22 +194,29 @@ figure#logo img{
 	background-color: #D32F2F;
 }
 /*Contenedor niñera*/
-.imagen_ninera{
+#ninera1{
 	float: left;
-	/*height: 200px;*/
-	width: 33%;
+	width: 30%;
 }
 #tiposervicios{
 	background-color: #4CAF50;
 	border-radius: 2em;
 	color: #fff;
-	margin-top: 100px;
+	margin-top: 80px;
+	padding: 1em;
+	float: left;
+	width: 35%;
+}
+#ninera2{
+	float: left;
+	width: 30%;
 }
 #cuidadora{
 	padding-left: 84.328px;
 }
-#desarrollo{
-	padding-left: 84.328px;
+#desarrollo img{
+	display: block;
+	margin: auto;
 }
 #canguro, #cuadromsn{
 	float: left;
@@ -240,9 +235,9 @@ figure#logo img{
 	width: 16.666%;
 }
 #pedicure, #manicure, #depilacion, #peluqueria, #barberia, #masaje{
+	display: block;
 	height: 65px;
-	margin-top: 50px;
-	margin-left: 79.9065px;
+	margin: 2em auto;
 	width: 65px;
 }
 /*Contenedor Opinión*/
@@ -258,37 +253,81 @@ figure#logo img{
 }
 /*Contenedor del footer o pie de página*/
 footer{
-	background-color: rgba(97, 97, 97, 0.9);
+	background: #333;
 	color: #fff;
 	width: 100%;
-	height: 200px;
+	height: 100px;
 }
 #contenedor_footer{
-	height: 150px;
-	width: 900px;
+	height: auto;
+	width: 90%;
 	margin: 0 auto;
-}
-#aside, #social, #membrete{
-	float: left;
-	height: 130px;
-	width: 33.333%;
-	color: #fff;
 	padding-top: 1em;
 }
-.menu_footer{
-	list-style: none;
-	margin-left: 5em;
+#membrete{
+	float: left;
+	width: 20%;
+	margin-left: 0;
 }
-.menu_footer .afooter{
+.membrete_footer{
+	list-style: none;
+}
+.membrete_footer .afooter{
 	color: #fff;
 	text-decoration: none;
 }
-#derechos{
-	border-top: 2px solid #fff;
-	width: 900px;
-	margin: 1em auto 0;
+#aside{
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-top: 1em;
 }
-#copy{
+#social{
+	float: left;
+	width: 15%;
+	text-align: center;
+	padding-top: 1em;
+}
+#derechos{
+	float: left;
+	width: 15%;
+	margin-left: 0;
+	padding-top: 1em;
+}
+.menu_footer{
 	width: 100%;
-	text-align: right;
+	display: inline-block;
+	list-style: none;
+}
+.menu_footer li{
+	display: inline-block;
+	padding: .5em;
+}
+.menu_footer li .afooter:hover{
+	color: #337ab7; 
+}
+.menu_footer li .afooter{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+.menu_footer li .afooter span{
+	padding: .3em;
+}
+#derechos figure{
+	float: left;
+	width: 20%;
+}
+#derechos figure img{
+	transition: .5s;
+}
+#derechos figure img:hover{
+	transform: rotate(90deg);
+}
+#derechos div{
+	float: left;
+	width: 80%;
+}
+#derechos div small{
+	padding: .5em;
 }

@@ -30,24 +30,13 @@
 		padding: .5em;
 		margin-top: .4em;
 	}
-	.menu480 .menupie{
-		display: block;
-		float: right;
-		margin-top: 1.5em;
-		margin-right: .3em;
-	}
-	.menu480 .menupie span{
-		cursor: pointer;
-		color: #fff;
-		font-size: 1em;
-	}
 	nav#menu{
-		width: 80%;
+		width: 70%;
 		height: calc(100% - 60px);
 		position: fixed;
 		left: -100%;
 		margin: 0;
-		margin-top: -6px;
+		margin-top: -19px;
 		overflow: scroll;
 	}
 	nav#menu ul#menu_navegacion{
@@ -66,12 +55,11 @@
 	nav#menu ul#menu_navegacion .item .a{
 		display: block;
 	}
-
 	nav#menu #logo, nav#menu #titulo,
 	section#portada, section#contenedorninera article#ninera1,
 	#servicio, .contenedor .titulo .subtitulocontenedor,
 	section#contenedorninera article#tiposervicios figure#canguro,
-	section#contenedoropinion, footer{
+	section#contenedoropinion{
 		display: none;
 	}
 	.contenedor{
@@ -102,11 +90,11 @@
 		color: #009688;
 		font-family: 'Acme', sans-serif;
 		font-size: 1em;
-		padding: .5em;
+		padding: .3em;
 		text-rendering: optimizeLegibility;
 	}
 	#tiposervicios{
-		background-color: #fff;
+		background-color: transparent;
 		border-radius: 0;
 		margin-top: 0;
 		color: #607D8B;
@@ -122,15 +110,43 @@
 	#ninera2{
 		display: block;
 		float: right;
-		margin-top: 1%;
+		margin-top: 0;
 		width: 50%;
 	}
-	#desarrollo{
-		padding-left: 0;
-		margin-left:  calc((100% - 281px)/2);
+	#desarrollo img{
+		display: block;
+		margin: auto;
 	}
 	#pedicure, #manicure, #depilacion, #peluqueria, 
 	#barberia, #masaje{
 		margin: 1em auto;
+	}
+	footer{
+		clear: both;
+		height: 170px;
+	}
+	#contenedor_footer{
+		clear: both;
+	}
+	#membrete{
+		display: none;
+	}
+	#aside, #social, #derechos{
+		display: block;
+		width: 100%;
+		padding-top: 0;
+	}
+	#aside, #social{
+		border-bottom: 2px solid #f5f5f5;
+	}
+	#derechos figure{
+		width: 46%;
+	}
+	#derechos figure img{
+		float: right;
+		margin-right: .3em;	
+	}
+	#derechos div{
+		width: 54%;
 	}
 }

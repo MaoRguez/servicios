@@ -30,24 +30,13 @@
 		padding: .5em;
 		margin-top: .4em;
 	}
-	.menu480 .menupie{
-		display: block;
-		float: right;
-		margin-top: 1.5em;
-		margin-right: .3em;
-	}
-	.menu480 .menupie span{
-		cursor: pointer;
-		color: #fff;
-		font-size: 1em;
-	}
 	nav#menu{
 		width: 40%;
 		height: calc(100% - 60px);
 		position: fixed;
 		left: -100%;
 		margin: 0;
-		margin-top: -6px;
+		margin-top: -19px;
 		overflow: scroll;
 	}
 	nav#menu ul#menu_navegacion{
@@ -68,8 +57,15 @@
 	}
 
 	nav#menu #logo, nav#menu #titulo,
-	section#portada, section#contenedoropinion{
+	section#portada, section#contenedoropinion,
+	#ninera1{
 		display: none;
+	}
+	#contenedorhogar, #contenedorbelleza{
+		height: auto;
+	}
+	.contenedor{
+		clear: both;
 	}
 	.contenedor .titulo h2{
 		display: block;
@@ -82,11 +78,6 @@
 		text-align: center;
 		margin: 0 auto;
 	}
-	.contenedor{
-		display: block;
-		height: auto;
-		width: 100%;
-	}
 	.imagen_servicios{
 		float: left;
 		width: 25%;
@@ -94,22 +85,21 @@
 	#cama, #baños, #cocina, #lavadora{
 		margin: 1em auto;
 	}
-	.imagen_ninera{
+	#ninera2{
 		float: left;
-		width: 33%;
-	}
-	#tiposervicios{
-		margin-top: 80px;
-	}
-	#cuidadora, #desarrollo{
-		padding: 0;
-		width: 100%;
-	}
-	#cuidadora img{
-		margin-left: 62.344px;
+		margin-top: 4em;
+		width: 52%;
 	}
 	#desarrollo img{
-		margin-left: 22.844px;
+		display: block;
+		margin: auto;
+	}
+	#tiposervicios{
+		margin-top: 6em;
+		padding: 1em;
+		margin-left: 1em;
+		float: left;
+		width: 40%;
 	}
 	#canguro{
 		margin-top: 4em;
@@ -118,5 +108,23 @@
 	#cuadromsn{
 		margin-left: 2em;
 		width: 60%;
+	}
+	#pedicure, #manicure, #depilacion, #peluqueria, #barberia, #masaje{
+		display: block;
+		margin: 1em auto;
+		height: 65px;
+		width: 65px;
+	}
+	footer{
+		height: 180px;
+	}
+	#membrete{ 
+		width: 40%;
+	}
+	#aside{
+		width: 50%;
+	}
+	#social, #derechos{
+		width: 50%;
 	}
 }
